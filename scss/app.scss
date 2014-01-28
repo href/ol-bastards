@@ -1,6 +1,49 @@
 @import "settings";
+
+$body-bg: #222;
+$body-font-family: Adelle, Georgia, serif;
+
+$panel-bg: rgba(20, 20, 20 , 0.5);
+$panel-border-style: dashed !important;
+$panel-border-color: white !important;
+$panel-border-size: 1px !important;
+
+$primary-color: #000;
+
+$header-font-weight: 700;
+$header-font-color: #efefef;
+$subheader-font-weight: 400;
+$paragraph-font-weight: 200;
+
 @import "foundation";
 
+body {
+    background: url('http://subtlepatterns.com/patterns/tweed.png');
+}
+
+.logo {
+    background: url('../logo.png') no-repeat;
+    display: block;
+    height: 110px;
+    width: 336px;
+    color: transparent;
+}
+
+@media only screen and (min-width: 40.063em) { 
+    .logo-navigation {
+        margin-top: 2em;
+    }
+}
+
+.logo-navigation {
+    dd {
+        font-size: 1.5em;
+    }
+}
+
+.panel {
+    border-color: white;
+}
 // Or selectively include components
 // @import
 //   "foundation/components/accordion",
